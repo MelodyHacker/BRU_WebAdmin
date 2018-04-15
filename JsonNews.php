@@ -1,18 +1,19 @@
-<?php	
-$serverName = "localhost";
-$userName = "root";
-$userPassword = "";
-$dbName = "bru";
+<?php
+// $serverName = "localhost";
+// $userName = "root";
+// $userPassword = "";
+// $dbName = "bru";
+require 'ConnectDataBase.php';
 
 $objCon = mysqli_connect($serverName,$userName,$userPassword,$dbName);
 
-mysqli_set_charset($objCon,"utf8");
+mysqli_set_charset($databaseconnect,"utf8");
 
 
 $sql = "SELECT * FROM news";
-$query = mysqli_query($objCon,$sql);
+$query = mysqli_query($databaseconnect,$sql);
 if (!$query) {
-	printf("Error: %s\n", $objCon->error);
+	printf("Error: %s\n", $databaseconnect->error);
 	exit();
 }
 $resultArray = array();
@@ -21,18 +22,8 @@ $resultArray = array();
 while($result =mysqli_fetch_array($query,MYSQLI_ASSOC))
 {
 	array_push($resultArray,$result);
-	
+
 }
-mysqli_close($objCon);
+mysqli_close($databaseconnect);
 echo json_encode(array('news' => $resultArray), JSON_UNESCAPED_UNICODE);
 ?>
-
-
-
-
-
-
-
-
-
-

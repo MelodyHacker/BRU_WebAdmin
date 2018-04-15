@@ -1,4 +1,4 @@
-<?php 
+<?php
 require 'ConnectDataBase.php';
 $q="SELECT*FROM places ";
 $result=mysqli_query($databaseconnect,$q)
@@ -35,7 +35,7 @@ $result=mysqli_query($databaseconnect,$q)
     <!--up load-->
     <div class="container">
       <h2>Ceate Event</h2>
-      <br> 
+      <br>
 
 
       <table>
@@ -56,7 +56,7 @@ $result=mysqli_query($databaseconnect,$q)
 
           <label>End Event:</label>
 
-          <input type="date" class="form-control" 
+          <input type="date" class="form-control"
           name="end_event" id="end_event">
           <br>
 
@@ -64,17 +64,17 @@ $result=mysqli_query($databaseconnect,$q)
           <?php
           $q="SELECT*FROM places";
           $result=mysqli_query($databaseconnect,$q);
-          ?>  
+          ?>
           <div class="form-group">
            <select class="form-control" name="place_id" id="place_id">
             <option value="">---Select  Place---</option>
-            <?php 
+            <?php
             while ($row=mysqli_fetch_array($result,MYSQLI_NUM)) {
-              echo "<option value='$row[0]'>$row[1]</option>";  
+              echo "<option value='$row[0]'>$row[1]</option>";
             }
             ?>
           </select>
-          
+
         </div>
 
 
@@ -122,12 +122,12 @@ $result=mysqli_query($databaseconnect,$q)
      &nbsp;
      <form action="ManageEvents.php">
       <input type="submit" class="btn btn-default" value="ManageEvents">
-    </form> 
+    </form>
 
     &nbsp;
     <form action="CeatePlace.php">
       <input type="submit" class="btn btn-default" value="CeatePlace">
-    </form> 
+    </form>
   </table>   <br><br><br>
 </div>
 </form>
@@ -149,6 +149,3 @@ $result=mysqli_query($databaseconnect,$q)
 
   </body>
   </html>
-
-
-

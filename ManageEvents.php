@@ -1,8 +1,7 @@
-
 <?php
 header("Refresh:3");
 require 'ConnectDataBase.php';
-$q="SELECT*FROM events INNER JOIN places ON events.place_id=places.place_id";
+$q="SELECT*FROM events INNER JOIN places ON events.place_id_event=places.place_id";
 $result=mysqli_query($databaseconnect,$q)
 ?>
 
@@ -29,18 +28,14 @@ $result=mysqli_query($databaseconnect,$q)
 			&nbsp;
 			<form action="CeateEvent.php">
 				<input type="submit" class="btn btn-default" value="CeateEvent">
-			</form> 
+			</form>
 			&nbsp;
 			<form action="ManagePlaces.php">
 				<input type="submit"  class="btn btn-default" value="ManagePlaces">
 			</form>
 		</table>
-
-
-
 		<br>
 		<table class="table table-striped">
-			
 
 			<tr>
 				<th>ID</th>
@@ -54,7 +49,7 @@ $result=mysqli_query($databaseconnect,$q)
 				<th>Image2</th>
 				<th>Image3</th>
 				<th>Edit Event</th>
-				<th>Delete Event</th>
+				<th>Hide Event</th>
 			</tr>
 			<tr>
 
@@ -63,26 +58,26 @@ $result=mysqli_query($databaseconnect,$q)
 					?>
 					<tr>
 						<td><?php echo $rowevent['event_id']; ?> </td>
-						<td><?php echo $rowevent['event_name']; ?> </td>
+						<td><?php if ($rowevent['event_status']=='2') {echo "Hide";
+						}else { echo $rowevent['event_name'];  } ?> </td>
 						<td><?php echo $rowevent['event_description']; ?> </td>
 						<td><?php echo $rowevent['start_event']; ?> </td>
 						<td><?php echo $rowevent['end_event']; ?> </td>
-						<td><?php echo $rowevent['place_id']; ?> </td>
+						<td><?php echo $rowevent['place_id_event']; ?> </td>
 						<td><?php echo $rowevent['place_name']; ?> </td>
 						<td><img src="upload/events/<?php echo $rowevent['event_image1']; ?>" width="50" height="50"></td>
 						<td><img src="upload/events/<?php echo $rowevent['event_image2']; ?>" width="50" height="50"></td>
 						<td><img src="upload/events/<?php echo $rowevent['event_image3']; ?>" width="50" height="50"></td>
 						<td><a href="EditsFormEvent.php?event_id=<?php echo $rowevent['event_id']; ?>">Edit Event</a></td>
-						<td><a href="DeleteEvents.php?event_id=<?php echo $rowevent['event_id']; ?>">Delete</a></td>
+						<td><a href="HideEvent.php?event_id=<?php echo $rowevent['event_id']; ?>">Hide Event</a></td>
 
 
 
 
-						
+
 					</tr>
 					<?php
 				}
-
 				?>
 			</tr>
 		</table>
