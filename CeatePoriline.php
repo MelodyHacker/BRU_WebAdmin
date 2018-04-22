@@ -14,7 +14,7 @@
 <body>
 
 
- <div id="map_canvas"  style="   
+ <div id="map_canvas"  style="
  height: 80%;
  width: 100%;
  ">
@@ -51,7 +51,7 @@
       <br>
 
       <label>Longitude:</label>
-      <input type="text" class="form-control" id="lng" placeholder="Longitude" name="lng">   
+      <input type="text" class="form-control" id="lng" placeholder="Longitude" name="lng">
       <br>
       <table>
       </th>
@@ -66,7 +66,7 @@
    &nbsp;
    <form action="ManagePorilines.php">
     <input type="submit" class="btn btn-default" value="Manage Poriline">
-  </form> 
+  </form>
 
   <br><br>  <br><br>
 </table>
@@ -74,15 +74,12 @@
 </div>
 
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG_XRJVSPps9W_wrEBh0dJCxFFCHQz_Gk&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2ViWUuA5LWL1pc5Pobz1A3mdrYpNbwC4&callback=initMap">
 </script>
 <script src="js/js_map.js"></script>
 
 
-</script> 
+</script>
 
 </body>
 </html>
-
-
-

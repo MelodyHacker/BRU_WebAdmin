@@ -14,7 +14,7 @@
 <body>
 
 
- <div id="map_canvas"  style="   
+ <div id="map_canvas"  style="
  height: 80%;
  width: 100%;
  ">
@@ -52,11 +52,11 @@
         <br>
 
         <label>Longitude:</label>
-        <input type="text" class="form-control" id="lng" placeholder="Longitude" name="lng">   
+        <input type="text" class="form-control" id="lng" placeholder="Longitude" name="lng">
         <br>
       </th>
 
-    
+
     <input type="submit" name="submit" value=" Save " class="btn btn-default">
   </form>
   &nbsp;
@@ -72,12 +72,9 @@
 </table>
 <br><br><br>
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG_XRJVSPps9W_wrEBh0dJCxFFCHQz_Gk&callback=initMap">
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2ViWUuA5LWL1pc5Pobz1A3mdrYpNbwC4&callback=initMap">
 </script>
 <script src="js/js_map.js"></script>
 
 </body>
 </html>
-
-
-

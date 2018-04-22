@@ -16,7 +16,7 @@ $result=mysqli_query($databaseconnect,$q)
   <link href="css/stylish-portfolio.css" rel="stylesheet">
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!--link scview-->
-  
+
 
 
 
@@ -72,14 +72,14 @@ $result=mysqli_query($databaseconnect,$q)
       <h3>Please check the information before editing !</h3>
       <br> -->
     </div>
-  </header> 
+  </header>
 
   <br>
   <br>
   <br>
 
-  <!--admin--> 
-  <section id="admins" class="font"> 
+  <!--admin-->
+  <section id="admins" class="font">
 
     <form action="CheckPassWord.php" method="post" >
       <div class="container">
@@ -103,7 +103,7 @@ $result=mysqli_query($databaseconnect,$q)
       </div>
 
     </form>
-  </div>      
+  </div>
 </form>
 
 
@@ -117,7 +117,7 @@ $result=mysqli_query($databaseconnect,$q)
 
 
 
-<section id="ceate" class="ceate">          
+<section id="ceate" class="ceate">
   <div class="container">
     <h2>Ceates</h2>
     <br>
@@ -130,41 +130,41 @@ $result=mysqli_query($databaseconnect,$q)
       &nbsp;
       <form action="CeatePlace.php">
         <input type="submit" class="btn btn-default"  value="Ceate Place">
-      </form>  
+      </form>
       &nbsp;
       <form action="CeateEvent.php">
         <input type="submit" class="btn btn-default" value="Ceate Event">
       </form>
-      &nbsp;  
+      &nbsp;
        <form action="CeatePhone.php">
         <input type="submit" class="btn btn-default" value="Ceate Phone">
       </form>
-      &nbsp; 
+      &nbsp;
       <form action="CeateToilet.php">
         <input type="submit" class="btn btn-default"  value="Ceate Toilet">
-      </form>  
+      </form>
       &nbsp;
       <form action="CeatePoriline.php">
         <input type="submit" class="btn btn-default"  value="Ceate Poriline">
-      </form>  
+      </form>
       <br>
       <br>
       &nbsp;
       <form action="ManageNews.php">
         <input type="submit" class="btn btn-default"  value="Manage News">
-      </form>  
+      </form>
       &nbsp;
       <form action="ManagePlaces.php">
         <input type="submit" class="btn btn-default" value="Manage Places">
-      </form>  
+      </form>
       &nbsp;
       <form action="ManageEvents.php">
         <input type="submit" class="btn btn-default" value="Manage Events">
-      </form>  
-      &nbsp; 
+      </form>
+      &nbsp;
       <form action="ManagePhones.php">
         <input type="submit" class="btn btn-default" value="Manage Phones">
-      </form> 
+      </form>
       &nbsp;
       <form action="ManageToilets.php">
         <input type="submit" class="btn btn-default" value="Manage Toilets">
@@ -172,13 +172,13 @@ $result=mysqli_query($databaseconnect,$q)
       &nbsp;
       <form action="ManagePorilines.php">
         <input type="submit" class="btn btn-default" value="Manage Porilines">
-      </form>  
+      </form>
       &nbsp;
 
     </table>
   </div>
 
-  
+
 
 
 </section>
@@ -222,15 +222,15 @@ $result=mysqli_query($databaseconnect,$q)
      <br>
      <label>ID Report</label>
      <?php
-     echo $rownews['report_id']; 
+     echo $rownews['report_id'];
      ?><br>
      <label>Name Report</label>
      <?php
-     echo $rownews['report_name']; 
+     echo $rownews['report_name'];
      ?>
      <br>
      <br>
-     <?php  
+     <?php
      $x++;
    }
    ?>
@@ -252,13 +252,13 @@ $result=mysqli_query($databaseconnect,$q)
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="img/reports.jpg" width="100%" height="100%">
+          <img src="img/cl3.jpg" width="100%" height="100%">
         </div>
         <div class="item">
-          <img src="img/admins.jpg" width="100%" height="100%">
+          <img src="img/cl4.jpg" width="100%" height="100%">
         </div>
         <div class="item">
-          <img src="img/places.jpg" width="100%" height="100%">
+          <img src="img/cl1.jpg" width="100%" height="100%">
         </div>
       </div>
     </div>
@@ -274,13 +274,13 @@ $result=mysqli_query($databaseconnect,$q)
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="img/reports.jpg" width="100%" height="100%">
+        <img src="img/cl1.jpg" width="100%" height="100%">
       </div>
       <div class="item">
-        <img src="img/admins.jpg" width="100%" height="100%">
+        <img src="img/cl5.jpg" width="100%" height="100%">
       </div>
       <div class="item">
-        <img src="img/places.jpg" width="100%" height="100%">
+        <img src="img/cl4.jpg" width="100%" height="100%">
       </div>
     </div>
   </div>
@@ -296,13 +296,13 @@ $result=mysqli_query($databaseconnect,$q)
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="img/reports.jpg" width="100%" height="100%">
+      <img src="img/cl5.jpg" width="100%" height="100%">
     </div>
     <div class="item">
-      <img src="img/admins.jpg" width="100%" height="100%">
+      <img src="img/cl2.jpg" width="100%" height="100%">
     </div>
     <div class="item">
-      <img src="img/places.jpg" width="100%" height="100%">
+      <img src="img/cl3.jpg" width="100%" height="100%">
     </div>
   </div>
 </div>
@@ -350,7 +350,7 @@ $result=mysqli_query($databaseconnect,$q)
               <br><br><br>
 
               <h3>Thank for</h3>
-              <br> <p>startbootstrap  Jonas Badalic  </p> 
+              <br> <p>startbootstrap  Jonas Badalic  </p>
             </div>
           </div>
         </div>
@@ -371,10 +371,10 @@ $result=mysqli_query($databaseconnect,$q)
           <!--JQ-->
           <script src="js/jquery.js"></script>
 
-          <!--Bootstrap menu sl-->  
+          <!--Bootstrap menu sl-->
           <script src="vendor/jquery/jquery.min.js"></script>
           <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-          <script src="js/stylish-portfolio.js"></script>   
+          <script src="js/stylish-portfolio.js"></script>
           <!--SC view-->
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
